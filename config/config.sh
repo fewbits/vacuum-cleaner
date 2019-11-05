@@ -3,4 +3,4 @@
 ##########
 # Config #
 ##########
-configInitialPath="/opt"
+configInitialPath="/"

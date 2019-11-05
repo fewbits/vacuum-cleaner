@@ -32,7 +32,7 @@ vacuumClean() {
 
   echo "Biggest file: ${thisPath}"
 
-  select action in "Skip" "Delete" "Quit"
+  select action in "Skip File" "Skip Directory" "Delete File" "Delete Directory" "Quit"
   do
 
     case "${action}" in
@@ -48,6 +48,8 @@ vacuumClean() {
       "Quit")
         vacuumLogOff
         ;;
+      *)
+        echo "Wrong choice..."
     esac
 
   done
